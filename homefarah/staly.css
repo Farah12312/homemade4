@@ -1,0 +1,453 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: #FCE4EC; */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px 0;
+  background:#FBDCDD;
+  box-shadow: 0 4px 6px rgba(0,0,0,.2);  
+}
+/* .container {
+  padding: 0 20px;
+  max-width: 960px;
+  margin: 0 auto;
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    direction: rtl;
+}
+.logo-box {
+  float: left;
+  margin-left: 50px;
+}
+.logo-box a {
+  outline: none;
+  display: block;
+}
+.logo-box img {display: block;}
+nav {
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+nav li {
+	font: bold;
+  display: inline-block;
+  margin-left: 25px;
+  height: 70px;
+  line-height: 70px;
+  transition: .5s linear;
+}
+nav a {
+	
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #868686;
+  text-transform: uppercase;
+}
+nav a:after {
+
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  background: #868686;
+  transition: width .5s linear;  
+}
+nav a:hover:after {width: 100%;}
+
+
+
+@media screen and (max-width: 660px) {
+  header {text-align: center;}
+  .logo-box {
+    float: none;
+    display: inline-block;
+    margin: 0 0 16px 0;
+  }
+  ul {float: none;}
+  nav li:first-of-type {margin-left: 0;}
+}
+@media screen and (max-width: 550px) {
+nav {overflow: visible;}
+nav li {
+  display: block;
+  margin: 0;
+  height: 40px;
+  line-height: 40px;
+}
+nav li:hover {background: rgba(0,0,0,.1);}
+nav a:after {content: none;}
+}
+
+
+/* الصفحة الرئيسية */
+
+
+.banner {
+  background-image: url(/صور/الصفحة\ الرئيسية.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1 {
+  font-size: 48px;
+  color: #7c4848;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  /* padding: 50px 0; */
+  text-align: center;
+  background-color: #FBDCDD;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.section h2 {
+    margin: 10px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(237, 189, 210);
+    padding: 10px;
+  
+}
+
+.section p {
+  font-size: 25px;
+  color: #666;
+  margin-bottom: 40px;
+  text-align: right;
+  padding: 5px;
+}
+
+.goals {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.goals-text ul {
+  list-style-type: disc;
+  font-size: 25px;
+  color: #666;
+  /* margin-bottom: 40px; */
+  text-align: right;
+  padding-left: 5px;
+  
+}
+
+.goals-image {
+ 
+  padding: 5px;
+
+}
+
+.message {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-text {
+  text-align: right;
+  width: 50%;
+}
+
+.message-image {
+  width: auto;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member {
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  margin-top: 10px;
+}
+
+.team-member p {
+  color: #666;
+}
+
+    
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  /* background-color: green; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding-right:50px ;
+}
+
+.Support{
+  position: fixed;
+  bottom:80px;
+  right: 20px;
+
+  /* background-color: green; */
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(80, 51, 51);
+  font-size: 24px;
+  text-decoration: none;
+  margin-right:10px ;
+  text-align: right;
+  background-color: pink;
+}
+
+
+/* الاسر المنتجة */
+
+header {
+  background-color: #FBDCDD;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #FBDCDD;
+  color: #3F3E3E;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.store {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+
+}
+
+.store img {
+  width:300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.store h3 {
+  /* margin: 10px; */
+  padding: 10px;
+  background-color: antiquewhite;
+}
+
+.store a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ecb3b5;
+  color: #3F3E3E;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 250px;
+}
+
+
+
+/* صفحة الشاكاوي */
+.father_continer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.form-container {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 50px;
+  width: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  margin-top: 15px;
+}
+
+.form-container h2 {
+  color: #FF4081;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #FF4081;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #FF4081;
+  border-radius: 3px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #FF4081;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #FF80AB;
+}
+
+/* الفوتر */
+
+
+/* ستايلات الفوتر */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+
+}
+
+/* ستايلات الأقسام */
+footer .section {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+/* ستايلات الروابط */
+footer a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+footer .connect p{
+  font-size: 18px;
+  text-align: center;
+}
+footer .links{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+/* تخطيط العمود في الجوال */
+@media (max-width: 600px) {
+  footer .section {
+    flex-basis: 100%;
+  }
+
+  footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+}
+
+
+/* صفحة سياسة الخصوصية  */
+/* ستايلات الصفحة */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 3px;
+}
+
+/* ستايلات سياسة الخصوصية */
+.privacy-policy {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.privacy-policy h2 {
+  margin-top: 0;
+}
+
+.privacy-policy p:last-child {
+  margin-bottom: 0;
+}
